@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interaktivní formulář s ověřováním</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <form id="myForm" action="#">
+    <h2>Registrační formulář</h2>
+    
+    <div class="form-group">
+      <label for="name">Jméno:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="password">Heslo:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="confirmPassword">Potvrzení hesla:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="country">Země:</label>
+      <select id="country" name="country" required>
+        <option value="">Vyberte zemi</option>
+        <option value="CZ">Česká republika</option>
+        <option value="SK">Slovenská republika</option>
+        <option value="US">Spojené státy americké</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="agree">Souhlasím s podmínkami:</label>
+      <input type="checkbox" id="agree" name="agree" required>
+    </div>
+    
+    <button type="submit">Odeslat</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

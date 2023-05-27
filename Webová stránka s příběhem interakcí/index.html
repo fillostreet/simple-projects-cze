@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interaktivní příběh</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="story" id="scene1">
+      <h1>Moje dobrodružství</h1>
+      <p>Byl jednou jeden statečný hrdina, který se vydal na nebezpečnou cestu.</p>
+      <button onclick="nextScene()">Pokračovat</button>
+    </div>
+
+    <div class="story" id="scene2">
+      <h1>Lesní mág</h1>
+      <p>V lese narazil na moudrého starce, který mu dal magický meč a radu, jak najít ztracený poklad.</p>
+      <button onclick="nextScene()">Pokračovat</button>
+    </div>
+
+    <div class="story" id="scene3">
+      <h1>Tajemná jeskyně</h1>
+      <p>Hrdina dorazil k tajemné jeskyni plné pokladů, ale musí se rozhodnout, kterou cestou se vydat.</p>
+      <button onclick="goLeft()">Vlevo</button>
+      <button onclick="goRight()">Vpravo</button>
+    </div>
+
+    <div class="story" id="scene4">
+      <h1>Poklad nalezen</h1>
+      <p>Hrdina se rozhodl správně a našel skrytý poklad. Byl slavný a bohatý a žil šťastně až do konce svých dní.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
